@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+    <style>
+        #form{
+            /* border: 2px solid rgb(58, 200, 216);       */
+            background: rgb(34, 208, 231);
+        }
+        .container{
+            padding-left: 30%;
+            /* display: flex;
+            justify-content: space-evenly; */
+            /* background:rgb(128, 214, 225) ; */
+        }
+        .inputbox{
+            /* display: block; */
+           
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form" action="RegestationServelet" method="post" >
+        <div class="container">
+            <h1>Registration Form</h1>
+            <div id="uname" class="inputbox">
+                <label for="username">Enter Your Name:</label>
+                <input type="text" id="username" placeholder="abcd" name="username">
+            </div>
+            <div id="pw" class="inputbox">
+                <label for="pass">Enter Your Password:</label>
+                <input type="password" id="pass" placeholder="******" name="password">
+            </div>
+            <div id="mail" class="inputbox">
+                <label for="email">Enter Your Email:</label>
+                <input type="email" id="email" placeholder="abc@gmail.com" name="email">
+            </div>
+            <div id="gn" class="inputbox">
+                <label for="Gneder">Select Gender:</label>
+                <input type="radio" name="sgender" id="r1" >
+                <label for="r1">Male</label>
+                <input type="radio" name="sgender" id="r2">
+                <label for="r2">Female</label>
+                <input type="radio" name="sgender" id="r3">
+                <label for="r3">Other</label>
+            </div>
+            <div id="cou" class="inputbox">
+                <label for="s1">Choose Course : </label>
+                <select name="course" id="s1" required >
+                    <option value="thar">Java</option>
+                    <option value="fortuner">Spring</option>
+                    <option value="defender">SpringBoot</option>
+                    <option value="fender">MySql</option>
+                    <option value="rr">Hibernate</option>
+                </select>
+            </div>
+            <div id="check" class="inputbox">
+                <input type="checkbox" name="checkbox" id="chek">
+                <label for="checkbox">Agree Terms and Conditions</label>
+            </div>
+
+            <div id="resitratin" class="inputbox">
+                <input type="button" name="registration" id="submit" value="Registration">
+            </div>
+            <div id="re" class="inputbox">
+                <input type="reset" value="Reset">
+            </div>
+
+            
+
+        </div>
+        
+
+    </form>
+</body>
+</html> 
